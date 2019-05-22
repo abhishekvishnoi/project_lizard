@@ -1,0 +1,12 @@
+.metadata
+.project
+.settings
+.classpath
+.springBeans
+.idea
+.xml/
+target
+*.iml
+.tern-project
+/bin
+MANIFEST.MF
