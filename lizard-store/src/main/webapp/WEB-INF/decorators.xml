@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/WEB-INF/views/decorators">
+	
+	<decorator name="layout" page="layout.jsp">
+		<pattern>/js/*</pattern>
+	</decorator>
+
+	<decorator name="adminlayout" page="layout.jsp">
+		<pattern>/admin/*</pattern>
+		<!-- <pattern>/login.do</pattern>  -->
+	</decorator>
+
+    <decorator name="loginlayout" page="loginlayout.jsp">
+       <pattern>/admin/login_red.do</pattern>
+    </decorator>
+    
+
+	<decorator name="store" page="storeLayout.jsp">
+    	 
+		<pattern>/storeHome.do</pattern>
+		<pattern>/product_details.do</pattern>
+	</decorator>
+
+	<decorator name="headerFooterOnly" page="headerFooterLayout.jsp">
+		<pattern>/profile/*</pattern>
+	</decorator>
+	
+	<!-- <excludes>
+        <pattern>*admin/login.do</pattern>
+       
+        <pattern>/RegisterUser.do</pattern>
+        <pattern>/assets/*</pattern>
+        <pattern>/scripts/*</pattern>
+        <pattern>/images/*</pattern>
+        <pattern>/index.html</pattern>
+        <pattern>/META-INF/*</pattern>
+    </excludes> -->
+	
+	
+	
+</decorators>
